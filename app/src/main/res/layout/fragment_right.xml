@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/person_info">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/after_denglu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.ych.unit.CircleImageView
+                        android:id="@+id/tx"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/logo" />
+
+                    <Button
+                        android:id="@+id/change_tx"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#778899"
+                        android:text="更改个人信息"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/before_denglu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+
+                <com.ych.unit.CircleImageView
+                    android:id="@+id/tx1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="#feb1b0b0"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/denglu"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="#778899"
+                        android:text="登录"
+                        android:textSize="15sp" />
+                    <Button
+                        android:id="@+id/regsister"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:background="#778899"
+                        android:text="注册"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fee1e1e1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#feffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/safe" />
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="账号安全"
+                        android:textColor="#fe060606" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <LinearLayout
+                    android:id="@+id/setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#feffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/setting" />
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="设置         "
+                        android:textColor="#fe060606" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <LinearLayout
+                    android:id="@+id/about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#feffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/i" />
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="关于我们"
+                        android:textColor="#fe060606" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" />
+
+                <LinearLayout
+                    android:id="@+id/update_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#feffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info" />
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="产品升级"
+                        android:textColor="#fe060606" />
+
+                    <TextView
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:text="Version:1.0"
+                        android:gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="25sp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="#feffffff"
+                    android:layout_height="40dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/esc_btn"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#feffffff"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/esc"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round2"
+                        android:layout_gravity="center_horizontal"
+                        android:text="退出登录"
+                        android:textColor="#fefcfbfb"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

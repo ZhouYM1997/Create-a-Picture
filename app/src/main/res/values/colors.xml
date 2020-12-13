@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cccc">#FFE3E3E3</color>
+    <color name="color">#FFE3E3E3</color>
+    <color name="color2">#FFC68F18</color>
+    <color name="blue">#ff2E75B6</color>
+
+    <color name="colourred">#D24D57</color>
+    <color name="colorWeChat">#393a3f</color>
+    <color name="colorAliPay">#1b82d1</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_bg">#727272</color>
+    <color name="sred">#ff4141</color>
+    <color name="gold">#d8ab5c</color>
+    <color name="orange">#ffa500</color>
+    <color name="pink">#ffc0cb</color>
+    <color name="green">#FF34A350</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="background">#f1f1f1</color>
+
+</resources>

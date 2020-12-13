@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ych">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="造画"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent101918841" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity android:name=".Activity.FirstActivity">
+        <!--<activity android:name=".MainActivity">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Register_Activity" />
+        <!-- <activity android:name="." /> -->
+        <activity android:name=".Activity.Login_Activity" />
+        <activity android:name=".Activity.change_info" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.about_us" />
+        <activity android:name=".Activity.WelcomeGuideActivity" />
+        <activity android:name=".wxapi.WXEntryActivity"
+        android:exported="true"
+        android:launchMode="singleTop"/>
+        <activity android:name=".Activity.MainFragActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".MainActivity"/>
+
+    </application>
+
+</manifest>

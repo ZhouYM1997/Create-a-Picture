@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/chat_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#000000"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小画同学"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <EditText
+            android:id="@+id/chat_input_message"
+            android:layout_width="270dp"
+            android:layout_height="30sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/myborder"
+            android:gravity="center" />
+
+        <Button
+            android:background="@drawable/btnborder"
+            android:id="@+id/chat_send"
+            android:layout_width="30sp"
+            android:layout_height="28sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="10sp"
+            android:layout_toRightOf="@id/chat_input_message"
+            android:text="发送"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- 中间 -->
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chat_bottom"
+        android:layout_below="@id/chat_top"
+        android:divider="@null"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+</RelativeLayout>
